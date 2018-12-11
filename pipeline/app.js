@@ -61,10 +61,18 @@ function fetchAndPush(db) {
 
 function sendEmail(post, user, callback){
     var transporter = nodemailer.createTransport({
-       service: 'gmail',
+       service: 'smtp.gmail.com',
+       port: 465,
+       secure: true,
        auth: {
-              user: cred.gmail.user,
-              pass: cred.gmail.password
+	 type: 'OAuth2',
+	 user: cred.gmail.user,
+	 clientId: cred.gmail.clientId,
+	 clientSecret: cred.gmail.clientSecret,
+         refreshToken: cred.gmail.refresh_token,
+         accessToken: cred.gmail.access_token,
+         expires: cred.gmail.expiry_date
+	
        }
     });
     var mailOptions = {

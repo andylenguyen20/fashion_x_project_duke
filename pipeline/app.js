@@ -7,7 +7,8 @@ const MongoClient = require('mongodb').MongoClient;
 const redis = require("redis");
 
 // load credentials
-const cred = JSON.parse(fs.readFileSync('./credentials/credentials.json', 'utf8'));
+const cred = JSON.parse(fs.readFileSync('./credentials/credentials.json', 'utf8'), null, 2);
+console.log(cred);
 
 // Setup database
 const dbUrl = `mongodb://${cred.db.user}:${cred.db.password}@${cred.db.host}`;
@@ -61,7 +62,7 @@ function fetchAndPush(db) {
 
 function sendEmail(post, user, callback){
     var transporter = nodemailer.createTransport({
-       service: 'smtp.gmail.com',
+       host: 'smtp.gmail.com',
        port: 465,
        secure: true,
        auth: {
@@ -72,7 +73,6 @@ function sendEmail(post, user, callback){
          refreshToken: cred.gmail.refresh_token,
          accessToken: cred.gmail.access_token,
          expires: cred.gmail.expiry_date
-	
        }
     });
     var mailOptions = {

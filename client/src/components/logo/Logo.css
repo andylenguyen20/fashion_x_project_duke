@@ -1,0 +1,24 @@
+.logo {
+  width: 30%;
+  height: 10%;
+  position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo {
+    width: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .logo {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .logo {
+    width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:700');
+
+p{
+  font-family: 'Inconsolata', monospace;
+  text-align: left;
+  font: bolder;
+}
+
+
+.cards {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.bag{
+  width: 25px;
+  height: 40px;
+  margin-right: 10px;
+}
+.card {
+  flex: 1;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.temp{
+  width: 250px;
+  height: 250px;
+}
+
+.title{
+  font-family: 'Inconsolata', monospace;
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 1%;
+}
+
+#diff{
+  height: 300px;
+}
+
+.clothes{
+  margin: 5%;
+  color: palevioletred;
+  font: bolder;
+  height: 25px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+
+.home {
+  width: 30px;
+  height: 30px;
+  vertical-align: super;
+  margin-right: 10px;
+}
+
+
+button{
+  font-family: 'Rubik', sans-serif;
+  box-shadow: 0 0 2pt 1pt pink;
+  border: none;
+}
+
+.logout {
+  width: 35px;
+  height: 35px;
+  vertical-align: unset;
+  margin-right: 10px;
+}
+
+.icons{
+  position: relative;
+  margin-right: 10px;
+  vertical-align: bottom;
+
+}
+
+@media only screen and (max-width: 900px) {
+  .temp{
+    width: 150px;
+    height: 200px;
+  }
+}

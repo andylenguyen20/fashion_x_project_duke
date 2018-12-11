@@ -1,0 +1,42 @@
+
+.filter-category {
+  display: inline-block;
+}
+
+.filter-button {
+  font-size: 15px;
+  height: 30px;
+  font: bolder;
+  box-shadow: 0 0 1pt 1pt black;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.filter-title{
+  display: inline-block;
+  font-weight: bolder;
+}
+
+.filter-align {
+  text-align: left;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropdown-menu {
+  display:none;
+}
+
+.show {
+  display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+  .web-filter {
+    display: none;
+  }
+}
+
+

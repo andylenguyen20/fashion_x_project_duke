@@ -1,0 +1,28 @@
+.LogInButton{
+  color: white;
+  background: palevioletred;
+  font-family: 'Mali', cursive;
+  font-size: 15px;
+  padding: 10px;
+  margin: 15px;
+  margin-bottom: 6.5%;
+}
+
+.login:focus {
+  outline: none;
+  box-shadow: 0 0 3pt 2pt peachpuff;
+}
+
+.login {
+  font-family: 'Mali', cursive;
+  margin: 8px;
+  width: 25%;
+  font-size: 18px;
+  padding: 10px;
+  border:2px solid peachpuff;
+  border-radius: 10px;
+}
+
+.login_main{
+  margin-top: 8%;
+}

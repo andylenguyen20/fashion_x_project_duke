@@ -1,0 +1,16 @@
+
+#FilterModal{
+  width:100%;
+  height:100%;
+  position:fixed;
+  left:0;
+  top:0;
+  background-color:white;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .d-none {
+    display: none;
+  }
+}
